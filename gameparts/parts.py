@@ -11,10 +11,11 @@ class Board:
         self.board[row][col] = player
 
     # Метод, который отрисовывает игровое поле.
-    def display(self):
-        for row in self.board:
-            print('|'.join(row))
-            print('-' * 5)
+    # def display(self):
+    #    for row in self.board:
+    #        print('|'.join(row))
+    #        print('-' * 5)
+    
     # Метод, который определяет победу.
     def check_win(self, player) -> bool:
         for i in range(self.field_size):
